@@ -10,6 +10,11 @@
 * 	Template Style 
 *
 * ======================================================= */
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   font-family: "Space Mono", Arial, serif;
   font-weight: 400;
