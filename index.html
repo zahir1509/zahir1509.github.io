@@ -34,54 +34,7 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-	<script>
-    const form = document.getElementById('contactForm'); // Use the new form ID
-    const result = document.getElementById('formResult'); // Use the new result ID
-
-    form.addEventListener('submit', function(e) {
-      e.preventDefault(); // Stop the default page redirect/reload
-
-      const formData = new FormData(form);
-      
-      // Convert FormData to a URL-encoded string for the fetch body
-      const params = new URLSearchParams();
-      for (const [key, value] of formData.entries()) {
-          params.append(key, value);
-      }
-      
-      result.innerHTML = "Sending message... Please wait..." // Show user feedback
-
-      fetch('https://api.web3forms.com/submit', {
-              method: 'POST',
-              body: params // Use URLSearchParams as the body
-          })
-          .then(async (response) => {
-              // Web3Forms returns JSON, but we need to check the status first
-              if (!response.ok) {
-                  throw new Error(`HTTP error! status: ${response.status}`);
-              }
-              return response.json();
-          })
-          .then((data) => {
-              // Successful submission (status 200)
-              result.innerHTML = data.message || "Message sent successfully!";
-          })
-          .catch(error => {
-              // Error during fetch or non-200 status
-              console.error(error);
-              result.innerHTML = "Something went wrong! Please try again later.";
-          })
-          .finally(() => {
-              // This runs regardless of success or failure
-              form.reset(); // Clear the form fields
-
-              // Clear the success/error message after 5 seconds (optional)
-              setTimeout(() => {
-                  result.innerHTML = "";
-              }, 5000);
-          });
-    });
-</script>
+	
 	</head>
 	<body>
 		
@@ -600,7 +553,57 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
 	</div>
-	
+
+
+
+	<script>
+    const form = document.getElementById('contactForm'); // Use the new form ID
+    const result = document.getElementById('formResult'); // Use the new result ID
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault(); // Stop the default page redirect/reload
+
+      const formData = new FormData(form);
+      
+      // Convert FormData to a URL-encoded string for the fetch body
+      const params = new URLSearchParams();
+      for (const [key, value] of formData.entries()) {
+          params.append(key, value);
+      }
+      
+      result.innerHTML = "Sending message... Please wait..." // Show user feedback
+
+      fetch('https://api.web3forms.com/submit', {
+              method: 'POST',
+              body: params // Use URLSearchParams as the body
+          })
+          .then(async (response) => {
+              // Web3Forms returns JSON, but we need to check the status first
+              if (!response.ok) {
+                  throw new Error(`HTTP error! status: ${response.status}`);
+              }
+              return response.json();
+          })
+          .then((data) => {
+              // Successful submission (status 200)
+              result.innerHTML = data.message || "Message sent successfully!";
+          })
+          .catch(error => {
+              // Error during fetch or non-200 status
+              console.error(error);
+              result.innerHTML = "Something went wrong! Please try again later.";
+          })
+          .finally(() => {
+              // This runs regardless of success or failure
+              form.reset(); // Clear the form fields
+
+              // Clear the success/error message after 5 seconds (optional)
+              setTimeout(() => {
+                  result.innerHTML = "";
+              }, 5000);
+          });
+    });
+	</script>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
