@@ -34,7 +34,7 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-	
+
 	</head>
 	<body>
 		
@@ -494,51 +494,49 @@
 	</div>
 
 	<div id="fh5co-consult" >
-    <div class="video fh5co-video" style="background-image: url(images/cover_bg_1.jpg);">
-        <div class="overlay"></div>
-    </div>
-    <div class="choose animate-box">
-        <h2>Let's connect!</h2>
-        <form id="contactForm"> 
-            
-            <div class="row form-group">
-                <div class="col-md-6">
-                    <input type="hidden" name="access_key" value="0a0852ee-442a-48a4-bd46-7876333067ed">
-                    <input type="text" name="fname" id="fname" class="form-control" placeholder="Firstname" required>
-                </div>
-            </div>
-            <div class="row form-group">
-                <div class="col-md-6">
-                    <input type="text" name="lname" id="lname" class="form-control" placeholder="Lastname">
-                </div>
-            </div>
+		<div class="video fh5co-video" style="background-image: url(images/cover_bg_1.jpg);">
+			<div class="overlay"></div>
+		</div>
+		<div class="choose animate-box">
+			<h2>Let's connect!</h2>
+			<form action="https://api.web3forms.com/submit" method="POST">
+				
+				<div class="row form-group">
+					<div class="col-md-6">
+						<input type="hidden" name="access_key" value="0a0852ee-442a-48a4-bd46-7876333067ed">
+						<input type="text" name="fname" id="fname" class="form-control" placeholder="Firstname" required>
+					</div>
+				</div>
+				<div class="row form-group">
+					<div class="col-md-6">
+						<input type="text" name="lname" id="lname" class="form-control" placeholder="Lastname">
+					</div>
+				</div>
 
-            <div class="row form-group">
-                <div class="col-md-12">
-                    <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" required>
-                </div>
-            </div>
+				<div class="row form-group">
+					<div class="col-md-12">
+						<input type="text" name="email" id="email" class="form-control" placeholder="Email Address" required>
+					</div>
+				</div>
 
-            <div class="row form-group">
-                <div class="col-md-12">
-                    <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject" >
-                </div>
-            </div>
+				<div class="row form-group">
+					<div class="col-md-12">
+						<input type="text" name="subject" id="subject" class="form-control" placeholder="Subject" >
+					</div>
+				</div>
 
-            <div class="row form-group">
-                <div class="col-md-12">
-                    <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Message" required></textarea>
-                </div>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary">
-            </div>
+				<div class="row form-group">
+					<div class="col-md-12">
+						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Message" required></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<input type="submit" value="Send Message" class="btn btn-primary">
+				</div>
 
-            <div id="formResult" style="margin-top: 15px;"></div> 
-
-        </form>	
-    </div>
-</div>
+			</form>	
+		</div>
+	</div>
 
 	<div id="fh5co-footer">
 		<div class="container">
@@ -553,57 +551,7 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
 	</div>
-
-
-
-	<script>
-    const form = document.getElementById('contactForm'); // Use the new form ID
-    const result = document.getElementById('formResult'); // Use the new result ID
-
-    form.addEventListener('submit', function(e) {
-      e.preventDefault(); // Stop the default page redirect/reload
-
-      const formData = new FormData(form);
-      
-      // Convert FormData to a URL-encoded string for the fetch body
-      const params = new URLSearchParams();
-      for (const [key, value] of formData.entries()) {
-          params.append(key, value);
-      }
-      
-      result.innerHTML = "Sending message... Please wait..." // Show user feedback
-
-      fetch('https://api.web3forms.com/submit', {
-              method: 'POST',
-              body: params // Use URLSearchParams as the body
-          })
-          .then(async (response) => {
-              // Web3Forms returns JSON, but we need to check the status first
-              if (!response.ok) {
-                  throw new Error(`HTTP error! status: ${response.status}`);
-              }
-              return response.json();
-          })
-          .then((data) => {
-              // Successful submission (status 200)
-              result.innerHTML = data.message || "Message sent successfully!";
-          })
-          .catch(error => {
-              // Error during fetch or non-200 status
-              console.error(error);
-              result.innerHTML = "Something went wrong! Please try again later.";
-          })
-          .finally(() => {
-              // This runs regardless of success or failure
-              form.reset(); // Clear the form fields
-
-              // Clear the success/error message after 5 seconds (optional)
-              setTimeout(() => {
-                  result.innerHTML = "";
-              }, 5000);
-          });
-    });
-	</script>
+	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -622,8 +570,6 @@
 	
 	<!-- Main -->
 	<script src="js/main.js"></script>
-	
 
 	</body>
 </html>
-
