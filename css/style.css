@@ -1065,7 +1065,7 @@ html[data-theme="light"] {
   --border: #e7e9f0;
   --border-strong: #d9dce5;
   --shadow: 0 8px 28px rgba(20, 33, 61, 0.08);
-  --nav-bg: rgba(255, 255, 255, 0.88);
+  --nav-bg: rgba(255, 255, 255, 0.96);
   --link: #14213d;
   --amber-text: #b45f06;
   --btn-bg: #14213d;
@@ -1865,5 +1865,46 @@ input[type="email"] {
 }
 .gototop a i {
   height: 46px;
+}
+
+/* Links inside body copy stay recognisable in both themes */
+.timeline-body a,
+.choose-sub a,
+.about-callout p a:not(.btn) {
+  text-decoration: underline;
+  text-decoration-color: var(--amber);
+  text-underline-offset: 3px;
+}
+
+/* About info list: keep the email on one line */
+.info {
+  width: 100%;
+}
+.info li .first-block {
+  width: 34%;
+  padding-right: 10px;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+.info li .second-block {
+  width: 66%;
+  font-size: 14px;
+}
+
+/* Case study header: tag and live marker share a row */
+.case-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 8px;
+  margin-bottom: 12px;
+}
+.case-head .case-tag {
+  margin: 0 8px 0 0;
+}
+.case-head .case-live {
+  float: none;
+  margin-top: 0;
 }
 

@@ -48,7 +48,7 @@
 				if (navLinks[entry.target.id]) { navLinks[entry.target.id].classList.add('active'); }
 			});
 		}, { rootMargin: '-45% 0px -50% 0px' });
-		['hero', 'about', 'resume', 'features', 'skills',
+		['hero', 'stats', 'about', 'resume', 'features', 'skills',
 			'work', 'cases', 'contact'].forEach(function (id) {
 			var el = document.getElementById(id);
 			if (el) { spy.observe(el); }
