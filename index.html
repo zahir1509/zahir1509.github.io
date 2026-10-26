@@ -3,20 +3,36 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Zahir - Portfolio</title>
+	<title>Zahir Ali - Data Analyst</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Zahir Portfolio Page" />
-	<meta name="keywords" content="zahir" />
-	<meta name="author" content="zahir" />
+	<meta name="description" content="Zahir Ali, Data Analyst at Euromonitor International. Forecasting, statistical modelling and data pipelines in R, Python and SQL." />
+	<meta name="keywords" content="Zahir Ali, data analyst, forecasting, econometrics, R, Python, SQL, BigQuery" />
+	<meta name="author" content="Zahir Ali" />
+	<meta name="theme-color" content="#14213d" />
+	<link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
 
+	<!-- Social share previews -->
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Zahir Ali" />
+	<meta property="og:title" content="Zahir Ali - Data Analyst" />
+	<meta property="og:description" content="Forecasting, statistical modelling and data pipelines in R, Python and SQL. Co-founder of Anyone Can Quiz." />
+	<meta property="og:url" content="https://zahir1509.github.io/" />
+	<meta property="og:image" content="https://zahir1509.github.io/images/og-image.png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Zahir Ali - Data Analyst" />
+	<meta name="twitter:description" content="Forecasting, statistical modelling and data pipelines in R, Python and SQL. Co-founder of Anyone Can Quiz." />
+	<meta name="twitter:image" content="https://zahir1509.github.io/images/og-image.png" />
 
-	<!-- ICON PACK : https://bootsnipp.com/iconsearch?library=icomoon&query=profile
-	COLORS : https://coolors.co/palettes/popular/portfolio -->
-
+	<!-- Apply saved theme before first paint; dark is the default -->
+	<script>
+		try { document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark'); }
+		catch (e) { document.documentElement.setAttribute('data-theme', 'dark'); }
+	</script>
 
 
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -30,47 +46,78 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
 
 	</head>
 	<body>
 		
-	<div class="fh5co-loader"></div>
+	<div class="page-loader"></div>
+
+	<nav class="site-nav" aria-label="Main">
+		<div class="container nav-inner">
+			<a href="#hero" class="nav-brand">zahir<span>.</span>ali</a>
+			<button type="button" class="nav-burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+			<ul class="nav-links">
+				<li><a href="#resume">Experience</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#work">Projects</a></li>
+				<li><a href="#cases">Case Studies</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch to light mode" title="Toggle dark/light mode"><i class="icon-sun"></i><i class="icon-moon"></i></button></li>
+			</ul>
+		</div>
+		<div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+	</nav>
 	
 	<div id="page">	
-	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
+	<header id="hero" class="hero" role="banner">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t js-fullheight">
-						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<div class="profile-thumb" style="background: url(images/user-3.jpg);"></div>
-							<h1><span>Zahir Ali</span></h1>
-							<h3><span>Data Science | Analytics</span></h3>
-							<p>
-								<ul class="fh5co-social-icons">
-									
-									<li><a href="https://www.linkedin.com/in/zahir-ali19/" target="_blank"><i class="icon-linkedin2"></i></a></li>
-									<li><a href="https://github.com/zahir1509" target="_blank"><i class="icon-github2"></i></a></li>
-									<li><a href="https://zahir1509.github.io/CV_Zahir_June24.pdf" target="_blank"><i class="icon-profile"></i></a></li>
-								</ul>
-							</p>
-						</div>
+			<div class="hero-inner animate-box" data-animate-effect="fadeIn">
+				<h1 class="sr-only">Zahir Ali, Data Analyst</h1>
+				<div class="hero-avatar"></div>
+				<div class="terminal hero-terminal">
+					<div class="terminal-bar"><span></span><span></span><span></span><em>zahir@bengaluru:~</em></div>
+					<div class="term-body" id="hero-term">
+						<div class="t-line t-cmd">whoami</div>
+						<div class="t-line t-out t-name">Zahir Ali</div>
+						<div class="t-line t-gap"></div>
+						<div class="t-line t-cmd">cat role.txt</div>
+						<div class="t-line t-out">Data Analyst, Euromonitor International</div>
+						<div class="t-line t-out">Forecasting &amp; statistical modelling in R, Python and SQL</div>
+						<div class="t-line t-gap"></div>
+						<div class="t-line t-cmd">cat side_quest.txt</div>
+						<div class="t-line t-out">Co-founder, Anyone Can Quiz (ACQ): a not-for-profit quiz community in Bangalore. I also wrote the software that runs it.</div>
+						<div class="t-line t-gap"></div>
+						<div class="t-line t-cmd">cat tagline.txt</div>
+						<div class="t-line t-out">I build forecasts, then try very hard to break them.</div>
+						<div class="t-line t-gap"></div>
+						<div class="t-line t-cmd">ls links/</div>
+						<div class="t-line t-links"><a href="https://www.linkedin.com/in/zahir-ali19/" target="_blank" rel="noopener">linkedin</a><a href="https://github.com/zahir1509" target="_blank" rel="noopener">github</a><a href="https://www.instagram.com/anyonecanquiz/" target="_blank" rel="noopener">acq-instagram</a><a href="https://zahir1509.github.io/CV_Zahir_Oct26.pdf" target="_blank" rel="noopener">cv.pdf</a></div>
+						<div class="t-line t-gap"></div>
+						<div class="t-line t-cmd t-final"></div>
 					</div>
+					<input id="term-input" class="term-input" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Type a command, for example projects or contact">
 				</div>
 			</div>
 		</div>
 	</header>
 
-	<div id="fh5co-about" class="animate-box">
+	<div id="stats" class="stats-strip">
+		<div class="container">
+			<ul class="stats-list">
+				<li><span class="stat-num" data-count="43890">43,890</span><span class="stat-label">travel corridors forecast</span></li>
+				<li><span class="stat-num" data-count="4.8" data-decimals="1" data-suffix="M">4.8M</span><span class="stat-label">clickstream sessions analysed</span></li>
+				<li><span class="stat-num" data-count="4">4</span><span class="stat-label">ACQ quizzes hosted so far</span></li>
+				<li><span class="stat-num" data-count="4.8" data-decimals="1" data-suffix="/5">4.8/5</span><span class="stat-label">as a teaching fellow</span></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="about" class="animate-box">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+				<div class="col-md-8 col-md-offset-2 text-center section-heading">
 					<h2>About Me</h2>
+					<p>Fewer buzzwords than the average bio.</p>
 				</div>
 			</div>
 			<div class="row">
@@ -80,34 +127,42 @@
 						<li><span class="first-block">Phone:</span><span class="second-block">+91 876 3333 473</span></li>
 						<li><span class="first-block">Email:</span><span class="second-block">zahirali1509@gmail.com</span></li>
 						<li><span class="first-block">Website:</span><span class="second-block">zahir1509.github.io</span></li>
-						<li><span class="first-block">Address:</span><span class="second-block">Bhubaneswar, India</span></li>
+						<li><span class="first-block">Location:</span><span class="second-block">Bengaluru, India</span></li>
+						<li><span class="first-block">Also:</span><span class="second-block">Co-founder, Anyone Can Quiz (ACQ)</span></li>
 					</ul>
 				</div>
 				<div class="col-md-8">
-					<h2>Hello There!</h2>
-					<p>I'm Zahir, a data scientist with a knack for transforming complex data into actionable insights. With a background in Psychology, Computer Science, and Economics from Ashoka University, I specialize in research design, data engineering, and analysis. From scraping political, economic, and bureaucratic information to analyzing sentiment from reviews, I leverage data to solve real-world and business problems. Whether it's building scalable web-scraping scripts or developing machine learning models, I enjoy the challenge of making sense out of chaos.</p>
+					<p>I'm a Data Analyst at Euromonitor International, building the forecasting and statistical models behind Passport and our client consulting work. I take loosely defined problems end to end: scope the ask, wrangle messy multi-source data in SQL/BigQuery, model in R and Python, test the results against business logic, and hand over a pipeline someone else can rerun without calling me.</p>
 
-					<p>Beyond my professional life, I'm a passionate explorer of diverse interests. When I'm not deep in data, you might find me traveling, playing the guitar, or video-gaming (I was briefly a semi-professional player). I also love diving into tech news or exploring new rabbit holes on Reddit. My journey has been as much about people and experiences as it has been about code and algorithms. Join me as I navigate the exciting world of research, data, business, and everything in between!</p>
+					<p>My background is Computer Science, Psychology and Economics at Ashoka University. The economics part comes in handy: a model with a great fit and a coefficient with the wrong sign is still wrong, and I'm usually the one who has to say so.</p>
+
+					<p>I use AI coding assistants daily, GitHub Copilot included. I write the spec, it writes the first draft, and I review and test every line.</p>
+
+					<div class="about-callout" id="acq">
+						<h3>Side quest: Anyone Can Quiz</h3>
+						<p>In April 2026, three friends and I started ACQ, a not-for-profit quiz community in Bangalore. The pitch is beginner-friendly quizzing: fun events, new people, and fewer "I'd only embarrass myself" excuses. We've hosted four quizzes so far (8 to 12 teams of three, Pounce &amp; Bounce to start), worked with other brands on events, and offer quiz-as-a-service for anyone who wants one.</p>
+						<p>I built the software too: four Python apps, each running a different quiz format from one laptop on a local network. "Just use a spreadsheet" did not survive contact with ten teams and a projector. <a href="#work">See the apps</a>.</p>
+						<p><a href="https://www.instagram.com/anyonecanquiz/" target="_blank" rel="noopener" class="btn btn-primary">Check us out on Instagram: @anyonecanquiz</a></p>
+					</div>
+
+					<p>Beyond that: guitar, travel, video games (I was briefly semi-professional, which I mention more often than necessary) and Reddit rabbit holes.</p>
 					
-					<p>
-						<ul class="fh5co-social-icons">
-							<button onclick="window.location.href='#fh5co-skills'" class="btn btn-primary">Skills</button>
-							<button onclick="window.location.href='#fh5co-work'" class="btn btn-primary">Projects</button>
-							<button onclick="window.location.href='#fh5co-consult'" class="btn btn-primary">Contact</button>
-							
-
-						</ul>
-					</p>
+					<div class="about-actions">
+						<a href="#skills" class="btn btn-primary">Skills</a>
+						<a href="#work" class="btn btn-primary">Projects</a>
+						<a href="#contact" class="btn btn-primary">Contact</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div id="fh5co-resume" class="fh5co-bg-color">
+	<div id="resume" class="bg-alt">
 		<div class="container">
 			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>My Resume</h2>
+				<div class="col-md-8 col-md-offset-2 text-center section-heading">
+					<h2>Experience &amp; Education</h2>
+					<p>Mostly other people's messy data. Occasionally other people's messy dorm floors.</p>
 				</div>
 			</div>
 			<div class="row">
@@ -117,62 +172,91 @@
 							<div><h3>Experience</h3></div>
 						</li>
 						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-badge" title="Euromonitor International"><span>EM</span></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Data Analyst</h3>
-									<span class="company">Euromonitor International | Jul 2025 - Present</span>
+									<h3 class="timeline-title">Data Analyst, Analytics Team</h3>
+									<span class="company">Euromonitor International | Bengaluru | Jul 2025 - Present</span>
 								</div>
 								<div class="timeline-body">
-									<p>Details here</p>
+									<ul>
+										<li>Scope loosely defined asks and turn them into reproducible, version-controlled R and Python pipelines: forecasting, BigQuery analysis and econometric validation, for Passport and client consulting work. Selected projects are in the <a href="#cases">case studies</a>.</li>
+										<li>Use internal AI agents for driver validation and variable grouping, and write build specs for GitHub Copilot to scaffold and refactor pipelines. I review and test every line. Nothing ships on vibes.</li>
+									</ul>
 								</div>
 							</div>
 						</li>
 						<li class="animate-box timeline-inverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-badge" title="Euromonitor International"><span>EM</span></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Associate Research Analyst</h3>
-									<span class="company">Euromonitor International | Jul 2024 - Jun 2025</span>
+									<h3 class="timeline-title">Associate Research Analyst, Catalyst Team</h3>
+									<span class="company">Euromonitor International | Bengaluru | Jul 2024 - Jul 2025</span>
 								</div>
 								<div class="timeline-body">
-									<p>Details here</p>
+									<ul>
+										<li>Engineering side: internal data apps and ETL for expert-interview data feeding research and LLM summarisation workflows (<a href="#cases">case study</a>).</li>
+										<li>Research side: data triangulation and market research, which mostly means deciding which of three conflicting numbers to believe.</li>
+									</ul>
 								</div>
 							</div>
 						</li>
 						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-badge" title="Ashoka University"><span>AU</span></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Data Science Teaching Fellow</h3>
-									<span class="company">Ashoka University | Aug 2023 - May 2024</span>
+									<h3 class="timeline-title">Graduate Teaching Fellow &amp; Research Assistant</h3>
+									<span class="company">Ashoka University | Sonipat | Aug 2023 - May 2024</span>
 								</div>
 								<div class="timeline-body">
-									<p>Details here</p>
+									<ul>
+										<li>Built Python (Selenium) pipelines for multi-source extraction of public policy datasets, including environmental clearance proposals across India.</li>
+										<li>Taught R, statistics and econometrics to 50+ undergraduates across Quantitative Research Methods and Data Science for Social Science Research. Rated 4.8/5; the missing 0.2 is presumably about the regressions.</li>
+									</ul>
 								</div>
 							</div>
 						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+						<li class="animate-box timeline-inverted">
+							<div class="timeline-badge" title="Trivedi Centre for Political Data"><span>TC</span></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Data Science Research Assistant</h3>
-									<span class="company">Part Time | Ashoka University | Sep 2023 - Dec 2023</span>
+									<h3 class="timeline-title">Research Associate (Internship)</h3>
+									<span class="company">Trivedi Centre for Political Data | Sonipat | May 2021 - Mar 2023</span>
 								</div>
 								<div class="timeline-body">
-									<p>Details here</p>
+									<ul>
+										<li>Built the Urban Local Bodies election dataset for 8 Indian states from scratch, end to end: mining, wrangling and standardisation in Python, Excel and R (<a href="#work">project</a>).</li>
+										<li>Wrote "Rise to Power", a breakdown of the 2022 Delhi MCD elections, published in TCPD Columns (Apr 2023).</li>
+									</ul>
 								</div>
 							</div>
 						</li>
 						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-badge" title="RedBrick Hacks"><span>RB</span></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Research Associate</h3>
-									<span class="company">Trivedi Center for Political Data | 2021 - 2023</span>
+									<h3 class="timeline-title">Head of Finance (Internship)</h3>
+									<span class="company">RedBrick Hacks, Ashoka University | May 2022 - Jun 2022</span>
 								</div>
 								<div class="timeline-body">
-									<p>Details here</p>
+									<ul>
+										<li>Ran the DevPost platform and the finances for Ashoka's flagship hackathon, with 140+ participants from Delhi-NCR. The budget survived.</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="animate-box timeline-inverted">
+							<div class="timeline-badge" title="Ashoka University"><span>AU</span></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Resident Assistant</h3>
+									<span class="company">Ashoka University | Sonipat | Aug 2021 - May 2022</span>
+								</div>
+								<div class="timeline-body">
+									<ul>
+										<li>Looked after a floor of undergraduates as mediator, mentor and community-builder, and worked with the Office of Student Life to run events. Early training in stakeholder management.</li>
+										<li>Handled the paperwork: monthly and semester reports, incident reports, floor directories.</li>
+									</ul>
 								</div>
 							</div>
 						</li>
@@ -186,11 +270,10 @@
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Postgraduate Diploma</h3>
-									<span class="company">Ashoka University | 2022 - 2023</span>
+									<span class="company">Ashoka University | Sep 2022 - May 2023</span>
 								</div>
 								<div class="timeline-body">
-									<p>Concentration: Economics and Entrepreneurship
-									</p>
+									<p>Concentration in Economics | CGPA: 3.43/4</p>
 								</div>
 							</div>
 						</li>
@@ -198,11 +281,11 @@
 							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">Bachelors of Science (Hons.)</h3>
-									<span class="company">Ashoka University | 2019 - 2022</span>
+									<h3 class="timeline-title">Bachelor of Science</h3>
+									<span class="company">Ashoka University | Aug 2019 - May 2022</span>
 								</div>
 								<div class="timeline-body">
-									<p>Psychology (Major), Computer Science (Minor)</p>
+									<p>Psychology &amp; Computer Science | CGPA: 3.63/4 | Dean's List (4 semesters)</p>
 								</div>
 							</div>
 						</li>
@@ -215,76 +298,77 @@
 	</div>
 	
 
-	<div id="fh5co-features" class="animate-box">
+	<div id="features" class="animate-box">
 		<div class="container">
 			<div class="services-padding">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>My Interests</h2>
+					<div class="col-md-8 col-md-offset-2 text-center section-heading">
+						<h2>What I Do</h2>
+						<p>The unglamorous work that keeps the glamorous charts honest.</p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-cogs"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Data Engineering</h3>
-								<p>Building and optimizing data pipelines for efficient data processing</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-search"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Data Mining</h3>
-								<p>Extracting insights and patterns from large datasets</p>
-							</div>
-						</div>
-
-					</div>
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-stats-bars"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Analytics</h3>
-								<p>Analyzing data to identify trends and actionable insights</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="row">
-					<div class="col-md-4 text-center">
-
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-genius"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Machine Learning</h3>
-								<p>Developing models to solve real-world problems and predict outcomes</p>
-							</div>
-						</div>
-
-					</div>
-
 					<div class="col-md-4 text-center">
 						<div class="feature-left">
 							<span class="icon">
 								<i class="icon-linegraph"></i>
 							</span>
 							<div class="feature-copy">
-								<h3>Business Intelligence</h3>
-								<p>Transforming data into insights for informed decision-making</p>
+								<h3>Forecasting</h3>
+								<p>Time-series, panel and gravity models, validated out of sample. In-sample fit is a flattering liar.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-stats-bars"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Econometrics</h3>
+								<p>Checking that coefficients make economic sense, not just statistical sense.</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-md-4 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-cogs"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Data Pipelines</h3>
+								<p>ETL and reproducible pipelines. If it only runs on my laptop, it isn't finished.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col-md-4 text-center">
+
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-search"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>SQL &amp; BigQuery</h3>
+								<p>Millions of rows, several sources, and usually someone else's join logic to audit.</p>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col-md-4 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-genius"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Scenario Modelling</h3>
+								<p>Bull, base and bear ranges from simulation, instead of one falsely precise number.</p>
 							</div>
 						</div>
 
@@ -295,8 +379,8 @@
 								<i class="icon-pie-chart2"></i>
 							</span>
 							<div class="feature-copy">
-								<h3>Data Visualisation</h3>
-								<p>Creating intuitive visualizations to communicate data effectively</p>
+								<h3>Data Apps &amp; Visuals</h3>
+								<p>Shiny, Streamlit and Plotly, for stakeholders who will never open an R script.</p>
 							</div>
 						</div>
 					</div>
@@ -305,201 +389,293 @@
 		</div>
 	</div>
 
-	<div id="fh5co-skills" class="animate-box">
+	<div id="skills" class="animate-box">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+				<div class="col-md-8 col-md-offset-2 text-center section-heading">
 					<h2>Skills</h2>
+					<p>Tools of the trade. No self-assigned scores out of ten.</p>
 				</div>
 			</div>
-			<div class="row row-pb-md">
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>Python</strong>9/10</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>R</strong>9/10</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="80"><span><strong>SQL</strong>8/10</span></div>
-				</div>
-
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>Excel</strong>9/10</span></div>
-				</div>
-				
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="progress-wrap">
-						<h3><span class="name-left">Selenium</span><span class="value-right">5/5</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Pandas</span><span class="value-right">4/5</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">dplyr</span><span class="value-right">5/5</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">ggplot</span><span class="value-right">4/5</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-4 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Scipy</span><span class="value-right">3.5/5</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-						  </div>
-						</div>
+			<div class="row skills-grid">
+				<div class="col-md-6 col-xs-12">
+					<div class="skill-card">
+						<div class="skill-head"><span class="skill-icon"><i class="icon-code"></i></span><h3>Languages &amp; Data</h3></div>
+						<ul class="skill-tags">
+							<li class="lead-tag">Python</li><li>Pandas</li><li>Scikit-learn</li><li>Streamlit</li>
+							<li class="lead-tag">R</li><li>tidyverse</li><li>plm</li><li>Shiny</li>
+							<li class="lead-tag">SQL</li><li>BigQuery</li><li>MySQL</li>
+						</ul>
 					</div>
 				</div>
-				<div class="col-md-6">
-					<div class="progress-wrap">
-						<h3><span class="name-left">PowerBI</span><span class="value-right">4.5/5</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-						  </div>
-						</div>
+				<div class="col-md-6 col-xs-12">
+					<div class="skill-card">
+						<div class="skill-head"><span class="skill-icon"><i class="icon-calculator"></i></span><h3>Modelling</h3></div>
+						<ul class="skill-tags">
+							<li>Time-series (ARIMA, BSTS)</li><li>Panel &amp; regression econometrics</li><li>Gravity models</li><li>Survival / cohort models</li><li>Simulation-based scenarios</li><li>Out-of-sample evaluation &amp; selection</li>
+						</ul>
 					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">NLP</span><span class="value-right">3.5/5</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-striped active" role="progressbar"
-						  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-						  </div>
-						</div>
+				</div>
+				<div class="col-md-6 col-xs-12">
+					<div class="skill-card">
+						<div class="skill-head"><span class="skill-icon"><i class="icon-terminal"></i></span><h3>AI &amp; Engineering</h3></div>
+						<ul class="skill-tags">
+							<li>ETL pipelines</li><li>Web scraping</li><li>Git</li><li>GitLab CI/CD</li><li>Azure DevOps</li><li>Azure VMs</li><li>GitHub Copilot</li>
+						</ul>
 					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Streamlit</span><span class="value-right">4/5</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Sklearn</span><span class="value-right">3.5/5</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Matplotlib</span><span class="value-right">4/5</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-						  </div>
-						</div>
+				</div>
+				<div class="col-md-6 col-xs-12">
+					<div class="skill-card">
+						<div class="skill-head"><span class="skill-icon"><i class="icon-pie-chart2"></i></span><h3>Visualisation</h3></div>
+						<ul class="skill-tags">
+							<li>Shiny</li><li>Streamlit</li><li>Plotly</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div id="fh5co-work" class="fh5co-bg-dark">
+	<div id="work" class="bg-dark">
 		<div class="container">
 			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+				<div class="col-md-8 col-md-offset-2 text-center section-heading">
 					<h2>Projects</h2>
+					<p>Newest first. The ACQ apps are mine to show. Anything I've built at work is under NDA, so the list thins into college work further down. Still building. Still hush.</p>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://tcpd.ashoka.edu.in/urban-local-bodies-dataset/" target="_blank" class="work" style="background-image: url(images/ULB_elections.jpg);">
-						<div class="desc">
-							<h3>Urban Local Bodies</h3>
-							<span><b>Dataset</b><br>Data engineering, Wrangling, Cleaning and Standardisation</span>
-						</div>
-					</a>
+			<div class="row proj-grid">
+				<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
+					<article class="proj-card">
+						<div class="proj-meta"><span>Oct 2026</span><span class="proj-badge">ACQ</span></div>
+						<h3>Prelims Quiz</h3>
+						<p>Multi-pass written prelims for 50 to 100 teams on one offline router. Answers autosave before the Wi-Fi can lose them, and marking is grouped, so 40 teams who wrote the same wrong thing are one click.</p>
+						<ul class="proj-tags"><li>Python</li><li>SQLite</li><li>SSE</li><li>Vanilla JS</li></ul>
+						<a class="proj-link" href="https://github.com/zahir1509/acq-general-quiz" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+					</article>
 				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://github.com/zahir1509/Decision-Support" target="_blank" class="work" style="background-image: url(images/decision_support.jpg);">
-						<div class="desc">
-							<h3>Decision Support</h3>
-							<span><b>Project</b><br>Web scraping, Data mining, Sentiment analysis</span>
-						</div>
-					</a>
+				<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
+					<article class="proj-card proj-private">
+						<div class="proj-meta"><span>2026</span><span class="proj-badge">ACQ</span></div>
+						<h3>Jeopardy</h3>
+						<p>Host-controlled Jeopardy board with phone buzzers, media clues, CSV board import and a full undo. The host judges everything; nothing is auto-scored, because quizmasters like being right.</p>
+						<ul class="proj-tags"><li>Python</li><li>SQLite</li><li>Real-time</li></ul>
+						<span class="proj-off"><i class="icon-lock"></i> Private repo. Ask nicely.</span>
+					</article>
 				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" target="_blank" class="work" style="background-image: url(images/portfolio-3.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Illustration</span>
-						</div>
-					</a>
+				<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
+					<article class="proj-card proj-private">
+						<div class="proj-meta"><span>2026</span><span class="proj-badge">ACQ</span></div>
+						<h3>Jeopardy, Pounce &amp; Bounce</h3>
+						<p>The same board, answered the Pounce &amp; Bounce way: each clue is directed to one team, everyone else may pounce first, and a missed clue bounces onward.</p>
+						<ul class="proj-tags"><li>Python</li><li>SQLite</li><li>Real-time</li></ul>
+						<span class="proj-off"><i class="icon-lock"></i> Private repo. Ask nicely.</span>
+					</article>
 				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" target="_blank" class="work" style="background-image: url(images/portfolio-4.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Design</span>
-						</div>
-					</a>
+				<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
+					<article class="proj-card proj-private">
+						<div class="proj-meta"><span>2026</span><span class="proj-badge">ACQ</span></div>
+						<h3>Pounce &amp; Bounce</h3>
+						<p>The format we've actually hosted: teams on phones, a scorer on a laptop, a projector on the wall. Local-first and crash-safe (kill the server mid-question and it carries on), with server-side rules, away-from-screen tracking and a hand-written QR encoder.</p>
+						<ul class="proj-tags"><li>Python</li><li>SQLite</li><li>SSE</li><li>Zero dependencies</li></ul>
+						<span class="proj-off"><i class="icon-lock"></i> Private repo. Ask nicely.</span>
+					</article>
 				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" target="_blank" class="work" style="background-image: url(images/portfolio-5.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Website</span>
-						</div>
-					</a>
+				<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
+					<article class="proj-card proj-redacted">
+						<div class="proj-meta"><span>2024 - Present</span><span class="proj-badge">NDA</span></div>
+						<h3>[REDACTED]</h3>
+						<p>Everything I've built for my employer. Confidential, and quite good. Anonymised versions are in the case studies below.</p>
+						<a class="proj-link" href="#cases">Read the case studies &darr;</a>
+					</article>
 				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" target="_blank" class="work" style="background-image: url(images/portfolio-6.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Illustration</span>
-						</div>
-					</a>
+				<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
+					<article class="proj-card">
+						<div class="proj-meta"><span>May 2024</span></div>
+						<h3>Political Economy of Development</h3>
+						<p>Principal component analysis on employment, consumption patterns and infrastructure proxies to examine rural India's development.</p>
+						<ul class="proj-tags"><li>PCA</li><li>Development economics</li></ul>
+						<a class="proj-link" href="https://github.com/zahir1509/pol-dev" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+					</article>
 				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" target="_blank" class="work" style="background-image: url(images/portfolio-7.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Brading</span>
-						</div>
-					</a>
+				<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
+					<article class="proj-card proj-private">
+						<div class="proj-meta"><span>2023</span></div>
+						<h3>Environmental Clearance Scraper</h3>
+						<p>Automated collection of environmental clearance proposals across India: primary data, supplementary documents and additional files, built as a research assistant at Ashoka.</p>
+						<ul class="proj-tags"><li>Python</li><li>Web scraping</li></ul>
+						<span class="proj-off"><i class="icon-lock"></i> Private repo. Ask nicely.</span>
+					</article>
 				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" target="_blank" class="work" style="background-image: url(images/portfolio-8.jpg);">
-						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Illustration</span>
-						</div>
-					</a>
+				<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
+					<article class="proj-card">
+					<div class="proj-meta"><span>Sep 2023</span></div>
+						<h3>Public-Sector Scrapers</h3>
+						<p>Two scrapers for public data: the Facebook page of Odisha's Revenue and Disaster Management Department, and bureaucracy (IAS) data from Supremo.</p>
+						<ul class="proj-tags"><li>Python</li><li>Web scraping</li><li>Jupyter</li></ul>
+						<a class="proj-link" href="https://github.com/zahir1509/facebook-scrape" target="_blank" rel="noopener">facebook-scrape &rarr;</a>
+						<a class="proj-link" href="https://github.com/zahir1509/IAS-data" target="_blank" rel="noopener">IAS-data &rarr;</a>
+					</article>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
+					<article class="proj-card">
+						<div class="proj-meta"><span>Jun 2021 - Mar 2023</span></div>
+						<h3>Urban Local Bodies Dataset</h3>
+						<p>Election dataset for urban local bodies in 8 Indian states, built from scratch at the Trivedi Centre for Political Data with the Center for the Advanced Study of India, UPenn. Yes, I know which columns lied.</p>
+						<ul class="proj-tags"><li>Python</li><li>Pandas</li><li>Selenium</li><li>BeautifulSoup</li><li>Camelot</li></ul>
+						<a class="proj-link" href="https://tcpd.ashoka.edu.in/urban-local-bodies-dataset/" target="_blank" rel="noopener">View the dataset &rarr;</a>
+					</article>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
+					<article class="proj-card">
+						<div class="proj-meta"><span>Jul 2022</span></div>
+						<h3>Decision Support</h3>
+						<p>Hotel reviews scraped and run through NLTK sentiment analysis, for the Data Mining and Warehousing course.</p>
+						<ul class="proj-tags"><li>Python</li><li>NLTK</li><li>Data mining</li></ul>
+						<a class="proj-link" href="https://github.com/zahir1509/Decision-Support" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+					</article>
+				</div>
+			</div>
+
+			<div class="underhood animate-box">
+				<h3>How the ACQ platform works</h3>
+				<p class="underhood-intro">One laptop, one offline router, a room full of phones. The design choices, and the reasoning behind them:</p>
+				<div class="row underhood-grid">
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<h4>Local-first</h4>
+						<p>The server runs on the host's laptop and phones join over a Wi-Fi network with no internet. Venue Wi-Fi can't kill the quiz, latency stays around 5 to 20 ms, and teams can't google the answers (mobile data off, volunteers watching).</p>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<h4>Zero dependencies</h4>
+						<p>Python's standard library only: <code>http.server</code>, <code>sqlite3</code>, vanilla JS and a hand-written QR encoder. No pip install, no Node, no build step, so nothing can break at 7:55 pm.</p>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<h4>Server-Sent Events, not WebSockets</h4>
+						<p>Updates only flow one way, which is exactly what SSE does, and browsers reconnect by themselves. Answers are plain POSTs, so a dropped stream can't lose one. A polling fallback catches stalled connections.</p>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<h4>Answers survive anything</h4>
+						<p>Every action is committed to SQLite before the phone is told it succeeded. Saves are idempotent and ordered, phones keep a local copy first, and killing the server mid-question just resumes it.</p>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<h4>The client is hostile</h4>
+						<p>The rules live on the server: a state machine, one answer per team enforced by the database, and payloads built per role so a phone never receives another team's answer. The UI hiding a button is a courtesy, not security.</p>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<h4>Humans mark, software helps</h4>
+						<p>Only normalised exact matches are scored automatically. Similar answers are suggested, never scored (1947 and 1948 are one edit apart), and identical answers are grouped, so 40 wrong teams are one decision.</p>
+					</div>
+				</div>
+				<p class="underhood-outro">Total infrastructure bill: one laptop, one router, zero cloud.</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="cases">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center section-heading">
+					<h2>Case Studies</h2>
+					<p>The work I can talk about, with the names removed. Methods and numbers are real; client details are not on offer.</p>
+				</div>
+			</div>
+			<div class="row cases-grid">
+				<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
+					<article class="case-card case-now">
+						<span class="case-tag">Healthcare forecasting</span><span class="case-live"><i></i>Working on this now</span>
+						<h3>GLP-1 users to 2035</h3>
+						<dl>
+							<dt>Problem</dt><dd>A stakeholder's Excel prototype was carrying a forecast it had no business carrying.</dd>
+							<dt>Approach</dt><dd>Scoped and co-developed an R cohort survival model with drop-off and restart flows, calibrated to external analyst estimates, with simulated bull/base/bear ranges.</dd>
+							<dt>So far</dt><dd>A version-controlled, reproducible pipeline and a range instead of one falsely precise number. The Excel prototype retired with honours.</dd>
+						</dl>
+					</article>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
+					<article class="case-card">
+						<span class="case-tag">Travel forecasting</span>
+						<h3>Forecasting 43,890 corridors</h3>
+						<dl>
+							<dt>Problem</dt><dd>Average Length of Stay for every travel corridor. Far too many to model by hand.</dd>
+							<dt>Approach</dt><dd>Out-of-sample-validated gravity models, automatic model selection per corridor (MAPE, pseudo-R&sup2;, sign consistency, mean reversion), topline scaling with soft bounds that preserves rank and trend.</dd>
+							<dt>Result</dt><dd>One reproducible pipeline, weak corridors flagged for an analyst instead of shipping quietly, and methodology docs co-authored with the team.</dd>
+						</dl>
+					</article>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
+					<article class="case-card">
+						<span class="case-tag">Consumer analytics</span>
+						<h3>4.8M sessions, one bad join</h3>
+						<dl>
+							<dt>Problem</dt><dd>How do shoppers behave after an AI referral? Asked by a global FMCG client.</dd>
+							<dt>Approach</dt><dd>BigQuery session, 24-hour purchase-journey and post-referral transition tables built from raw clickstream.</dd>
+							<dt>Result</dt><dd>Caught a supplier-table join that filed competitor brands under the wrong owner. Replaced it with a curated brand&times;category mapping.</dd>
+						</dl>
+					</article>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
+					<article class="case-card">
+						<span class="case-tag">Econometrics</span>
+						<h3>Great fit, wrong sign</h3>
+						<dl>
+							<dt>Problem</dt><dd>Channel-share driver models across multiple countries, with plenty of ways to be confidently wrong.</dd>
+							<dt>Approach</dt><dd>Checked coefficient signs and economic logic for every specification, not just the fit statistics.</dd>
+							<dt>Result</dt><dd>Statistically good but economically implausible specifications rejected.</dd>
+						</dl>
+					</article>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
+					<article class="case-card">
+						<span class="case-tag">Data engineering</span>
+						<h3>100+ transcripts a month</h3>
+						<dl>
+							<dt>Problem</dt><dd>100+ expert-interview transcripts a month, needed by research and LLM summarisation workflows.</dd>
+							<dt>Approach</dt><dd>ETL merging Salesforce API pulls and batch VTT processing into one schema, a REST API extended to pre-2023 trade interviews, GitLab CI/CD on a VM.</dd>
+							<dt>Result</dt><dd>Stakeholders got shared endpoints and ingestion KPIs (frequency, distribution, quality).</dd>
+						</dl>
+					</article>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12 animate-box">
+					<article class="case-card">
+						<span class="case-tag">Production forecasting</span>
+						<h3>The pipelines behind Passport</h3>
+						<dl>
+							<dt>Problem</dt><dd>Published data products need forecasts that survive scrutiny and next quarter.</dd>
+							<dt>Approach</dt><dd>Maintained R pipelines (ARIMA, BSTS, Panel) plus Python automation for API-based economic data extraction.</dd>
+							<dt>Result</dt><dd>Published numbers that someone has actually checked, repeatedly.</dd>
+						</dl>
+					</article>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div id="fh5co-consult" >
-		<div class="video fh5co-video" style="background-image: url(images/cover_bg_1.jpg);">
+	<div id="contact" >
+		<div class="video contact-panel">
 			<div class="overlay"></div>
+			<div class="terminal">
+				<div class="terminal-bar"><span></span><span></span><span></span><em>zahir@bengaluru:~</em></div>
+<pre>$ whoami
+zahir ali, data analyst
+
+$ cat open_to.txt
+- new challenges
+- messy data (I will clean it)
+- eternal curiosity, free of charge
+- ACQ x your brand: collabs
+  welcome
+
+$ git log -1 --oneline
+c0ffee1 fix: competitors are
+        not suppliers
+
+$ <span class="cursor">_</span></pre>
+			</div>
 		</div>
 		<div class="choose animate-box">
-			<h2>Let's connect!</h2>
-			<form action="https://api.web3forms.com/submit" method="POST">
+			<h2>Get in touch</h2>
+			<p class="choose-sub">Open to new challenges, and eternally curious. ACQ is also looking to collaborate with other brands and communities, so if that's you, say hello. Or come <a href="https://www.instagram.com/anyonecanquiz/" target="_blank" rel="noopener">find ACQ on Instagram</a>.</p>
+			<form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
 				
 				<div class="row form-group">
 					<div class="col-md-6">
@@ -515,7 +691,7 @@
 
 				<div class="row form-group">
 					<div class="col-md-12">
-						<input type="text" name="email" id="email" class="form-control" placeholder="Email Address" required>
+						<input type="email" name="email" id="email" class="form-control" placeholder="Email Address" required>
 					</div>
 				</div>
 
@@ -530,46 +706,41 @@
 						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Message" required></textarea>
 					</div>
 				</div>
+				<input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off" style="display:none">
 				<div class="form-group">
 					<input type="submit" value="Send Message" class="btn btn-primary">
 				</div>
+				<p id="form-status" class="form-status" role="status" aria-live="polite"></p>
 
 			</form>	
 		</div>
 	</div>
 
-	<div id="fh5co-footer">
+	<div id="footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8">
-					<p>&copy; 2024 Zahir | Inspired by <b>FreeHTML5.co </b> | Demo Images: <b>Unsplash</b></p>
+					<p>&copy; 2026 Zahir Ali | <a href="https://www.instagram.com/anyonecanquiz/" target="_blank" rel="noopener">ACQ on Instagram</a> | No models were overfit in the making of this page.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+		<a href="#" class="js-gotop" aria-label="Back to top"><i class="icon-arrow-up22"></i></a>
 	</div>
 	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
 	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Easy PieChart -->
-	<script src="js/jquery.easypiechart.min.js"></script>
-	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE&sensor=false"></script>
-	<script src="js/google_map.js"></script>
 	
 	<!-- Main -->
 	<script src="js/main.js"></script>
+	<!-- Theme toggle, nav, hero typing -->
+	<script src="js/site.js"></script>
 
 	</body>
 </html>

@@ -1,0 +1,3 @@
+# Local research material, never publish (github_data contains an API token)
+github_data/
+.DS_Store
