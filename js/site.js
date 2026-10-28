@@ -48,7 +48,7 @@
 				if (navLinks[entry.target.id]) { navLinks[entry.target.id].classList.add('active'); }
 			});
 		}, { rootMargin: '-45% 0px -50% 0px' });
-		['hero', 'stats', 'about', 'resume', 'features', 'skills',
+		['hero', 'about', 'resume', 'features', 'skills',
 			'work', 'cases', 'contact'].forEach(function (id) {
 			var el = document.getElementById(id);
 			if (el) { spy.observe(el); }
@@ -125,7 +125,7 @@
 		shellReady = true;
 
 		var sections = {
-			about: 'about', experience: 'resume', resume: 'resume', stats: 'stats',
+			about: 'about', experience: 'resume', resume: 'resume',
 			skills: 'skills', projects: 'work', work: 'work', cases: 'cases',
 			'case-studies': 'cases', contact: 'contact', acq: 'acq'
 		};
@@ -222,36 +222,6 @@
 			if (!ticking) { ticking = true; window.requestAnimationFrame(updateProgress); }
 		}, { passive: true });
 		updateProgress();
-	}
-
-	// Stats strip: count up once when scrolled into view
-	var stats = [].slice.call(document.querySelectorAll('.stat-num[data-count]'));
-	var showStat = function (el, value) {
-		var d = parseInt(el.getAttribute('data-decimals') || '0', 10);
-		el.textContent = value.toLocaleString('en-US', { minimumFractionDigits: d, maximumFractionDigits: d }) +
-			(el.getAttribute('data-suffix') || '');
-	};
-	if (stats.length && 'IntersectionObserver' in window && !reduceMotion) {
-		var countUp = function (el) {
-			var target = parseFloat(el.getAttribute('data-count'));
-			var duration = 1400;
-			var start = null;
-			var step = function (ts) {
-				if (start === null) { start = ts; }
-				var t = Math.min((ts - start) / duration, 1);
-				showStat(el, target * (1 - Math.pow(1 - t, 3)));
-				if (t < 1) { window.requestAnimationFrame(step); }
-			};
-			window.requestAnimationFrame(step);
-		};
-		var statObserver = new IntersectionObserver(function (entries, obs) {
-			entries.forEach(function (entry) {
-				if (!entry.isIntersecting) { return; }
-				obs.unobserve(entry.target);
-				countUp(entry.target);
-			});
-		}, { threshold: 0.6 });
-		stats.forEach(function (el) { showStat(el, 0); statObserver.observe(el); });
 	}
 
 	// Contact form: send in the background and show a thank-you message

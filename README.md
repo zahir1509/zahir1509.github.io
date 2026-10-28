@@ -18,7 +18,7 @@ python -m http.server 8000
 |---|---|
 | `index.html` | The whole page |
 | `css/style.css` | Theme, dark/light variables and all custom styles |
-| `js/site.js` | Theme toggle, nav, terminal typing, stats counters, scroll progress, contact form |
+| `js/site.js` | Theme toggle, nav, terminal typing, scroll progress, contact form |
 | `js/main.js` | Scroll-in animations and back-to-top |
 | `images/` | Profile photo, favicon, social share image, loader |
 

@@ -1696,47 +1696,6 @@ html[data-theme="light"] .theme-toggle .icon-moon {
   vertical-align: middle;
 }
 
-/* Stats strip */
-.stats-strip {
-  padding: 30px 0;
-  background: var(--bg-alt);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
-.stats-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.stats-list li {
-  flex: 1 1 200px;
-  padding: 8px 18px;
-  text-align: center;
-}
-.stat-num {
-  display: block;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 1.2;
-  color: var(--heading);
-  font-variant-numeric: tabular-nums;
-}
-.stat-label {
-  display: block;
-  margin-top: 4px;
-  font-size: 12px;
-  letter-spacing: 0.5px;
-  color: var(--muted);
-}
-@media screen and (max-width: 600px) {
-  .stats-list li {
-    flex-basis: 50%;
-  }
-}
-
 /* Case study: work in progress marker */
 .case-card h3 {
   clear: both;
